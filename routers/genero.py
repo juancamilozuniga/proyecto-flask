@@ -2,7 +2,7 @@ from flask import request,render_template,jsonify,redirect,url_for,session,flash
 from models.genero import Genero
 from app import app
 
-@app.route("/listgenero/",methods=['GET'])
+@app.route("/listargenero/",methods=['GET'])
 def listGenero():
     if 'usuario_id' not in session:
         return redirect(url_for('login'))
